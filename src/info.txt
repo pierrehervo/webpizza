@@ -1,0 +1,1 @@
+Le répertoire "src" contient le développement de la partie métier de l'application.
