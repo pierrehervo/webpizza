@@ -1,1 +1,1 @@
-mon appli est démarrée !
+<?php
