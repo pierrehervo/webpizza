@@ -55,3 +55,19 @@
   * 4.Définition des varaiables de routage
   */
  
+  //Définition de l'uri par défaut
+  $uri = "/";
+
+  //Définition de la table routage par défaut
+  $routes = [];
+
+   //Contient les informations de la route courante
+   $route = [];
+
+  //Inclusion de la config du routage
+  require_once "routes.php";
+
+
+  /**
+   * 5.Définition des expressions régulières
+   */
