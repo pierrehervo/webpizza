@@ -12,4 +12,8 @@
    */
   require_once "../config/config.php";
 
-  echo WEBSITE_TITLE;
+
+/**
+ * 3.Définition de l'environnement
+ */
+require_once "../app/environnement.php";
