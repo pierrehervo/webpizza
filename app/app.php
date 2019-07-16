@@ -2,11 +2,17 @@
 /**
  * Fichier d'exécution de l'application
  */
+
 /**
  * 1. Démarrage de la session
  * --
  * La session va permettre de suivre le visiteur pendant la durée de sa navigation
  */
+session_start ();
+
+//var_dump ($_SESSION);
+
+
 /**
  * 2. Intégration de la configuration
  */
@@ -27,12 +33,18 @@ require_once "../app/dbconnect.php";
  * 6. Routage de l'application
  */
 require_once "../app/routing.php";
+
 /**
  * 7. Inclusion des fonctions "Utils"
  */
+include_once"../app/utils.php";
+
 /**
- * 8. Compilation de la page (part 1 - Le controleur principal)
+ * 8. Controleur principal (commun à toutes les pages du site)
  */
+include_once"../src/controllers/common.php";
+
 /**
- * 9. Compilation de la page (part 2 - la compilation finale)
+ * 9. Compilation de la page 
  */
+include_once"../app/compile.php";
